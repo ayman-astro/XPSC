@@ -27,8 +27,8 @@ int main()
             bool flag = false;
             if (mp.count(a) and mp.count(b))
             {
-                int l = *min_element(mp[a].begin(), mp[a].end());
-                int r = *max_element(mp[b].begin(), mp[b].end());
+                int l = mp[a].front();
+                int r = mp[b].back();
                 if (l <= r)
                 {
                     flag = true;
